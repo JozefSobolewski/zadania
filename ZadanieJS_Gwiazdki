@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZadanieJS</title>
+  </head>
+  <body>
+    <script>
+      function pierwsze_zadanie() {
+        let x = "*";
+        let a = parseInt(prompt());
+        let b = 0;
+
+        while (b != a) {
+          b++;
+          x += "*";
+        }
+        console.log(x);
+      }
+
+      function drugie_zadanie() {
+        let x = "";
+        let a = parseInt(prompt());
+        let b = 0;
+
+        while (b != a) {
+          b++;
+          x += "*\n";
+        }
+        console.log(x);
+      }
+
+      function trzecie_zadanie() {
+        let x = "";
+        let a = parseInt(prompt());
+        let b = 0;
+
+        while (b != a) {
+          b++;
+          x += "*".repeat(b) + "\n";
+        }
+        console.log(x);
+      }
+
+      let w = prompt();
+
+      if (w == 1) {
+        pierwsze_zadanie();
+      } else if (w == 2) {
+        drugie_zadanie();
+      } else if (w == 3) {
+        trzecie_zadanie();
+      } else {
+        console.log("error");
+      }
+    </script>
+  </body>
+</html>
